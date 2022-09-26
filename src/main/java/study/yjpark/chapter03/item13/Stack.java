@@ -34,6 +34,13 @@ public class Stack implements Cloneable {
     public Stack clone() {
         try {
             Stack result = (Stack) super.clone();
+            // TODO 1번 : stack, copy -> elements (같은 elements 보고있음)
+            // TODO 2번 : Shallow copy issue
+            // TODO stack -> elementsS[0, 1]
+            // TODO copy -> elementsC[0, 1]
+            // TODO elementsS[0] == elementsC[0]
+            // 배열 두개가 동일한 Instance 보고 있음
+            result.elements = elements.clone();
             return result;
         } catch (CloneNotSupportedException e) {
             throw new AssertionError();
