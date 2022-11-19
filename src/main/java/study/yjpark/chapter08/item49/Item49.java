@@ -31,16 +31,19 @@ public class Item49 {
     public static void main(String[] args) {
         // [49-2] Java7에 추가된 java.util.Objects.requireNonNull 메서드를 통한 Null 체크
         String strategy = null;
-        String param = null;
+        String param = "null";
         strategy = Objects.requireNonNull(param, "매개변수가 null 입니다.");
+        // [49-3] Java9에 추가된 Objects.checkIndex 메서드를 통한 범위 체크
+        int index = 4;
+        int length = 10;
+        System.out.println(Objects.checkIndex(index, length));
     }
 
-    // [49-3] 단언문(assert)을 사용한 재귀 정렬용 private Helper Method
+    // [49-4] 단언문(assert)을 사용한 재귀 정렬용 private Helper Method
     private static void sort(long a[], int offset, int length) {
         assert a != null;
         assert offset >= 0 && offset <= a.length;
         assert length >= 0 && length <= a.length - offset;
-
-        // 생략 (연산 수행)
+        // 생략 (계산 수행)
     }
 }
