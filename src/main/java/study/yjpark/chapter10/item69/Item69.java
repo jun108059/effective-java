@@ -1,4 +1,4 @@
-package study.yjpark.chapter10;
+package study.yjpark.chapter10.item69;
 
 /**
  * [Item69] 예외는 진짜 예외 상황에서만 사용하라
