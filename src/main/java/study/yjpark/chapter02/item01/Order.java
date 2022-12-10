@@ -1,4 +1,4 @@
-package study.yjpark.chapter01.item01;
+package study.yjpark.chapter02.item01;
 
 // 정적 팩터리 메서드 샘플
 // 메서드 이름으로 생성 객체를 명확히 표현 가능

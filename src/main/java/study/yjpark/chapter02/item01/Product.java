@@ -1,4 +1,4 @@
-package study.yjpark.chapter01.item01;
+package study.yjpark.chapter02.item01;
 
 import java.util.EnumSet;
 
